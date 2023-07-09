@@ -4,16 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        tbody > tr > td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead,tfoot {
+            width: 500px;
+            background-color: rgb(53, 52, 52);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(53, 52, 52);
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
     <h2>tabelas em html</h2>
 
     <table class="table-normal">
+        <caption>População das Unidades Federativas</caption>
 	<thead>
 		<tr>
 			<th scope="col">Estado</th>
 			<th scope="col">Sigla</th>
-			<th scope="col">Capital</th>
             <th scope="col">Habitantes</th>
 		</tr>
 	</thead>
@@ -21,165 +57,142 @@
 		<tr>
 			<td>Acre</td>
 			<td>AC</td>
-			<td>Rio Branco</td>
-            <td>906.876</td>
+            <td class="num">906.876</td>
 		</tr>
 		<tr>
 			<td>Alagoas</td>
 			<td>AL</td>
-			<td>Maceió</td>
-            <td>3.365.351</td>
+            <td class="num">3.365.351</td>
 		</tr>
 		<tr>
 			<td>Amapá</td>
 			<td>AP</td>
-			<td>Macapá</td>
-            <td>877.713</td>
+            <td class="num">877.713</td>
 		</tr>
 		<tr>
 			<td>Amazonas</td>
 			<td>AM</td>
-			<td>Manaus</td>
-            <td>4.269.995</td>
+            <td class="num">4.269.995</td>
 		</tr>
 		<tr>
 			<td>Bahia</td>
 			<td>BA</td>
-			<td>Salvador</td>
-            <td>14.985.284</td>
+            <td class="num">14.985.284</td>
 		</tr>
 		<tr>
 			<td>Ceará</td>
 			<td>CE</td>
-			<td>Fortaleza</td>
-            <td>9.240.580</td>
+            <td class="num">9.240.580</td>
 		</tr>
 		<tr>
 			<td>Espírito Santo</td>
 			<td>ES</td>
-			<td>Vitória</td>
-            <td>4.108.508</td>
+            <td class="num">4.108.508</td>
 		</tr>
 		<tr>
 			<td>Goiás</td>
 			<td>GO</td>
-			<td>Goiânia</td>
-            <td>7.206.589</td>
+            <td class="num">7.206.589</td>
 		</tr>
 		<tr>
 			<td>Maranhão</td>
 			<td>MA</td>
-			<td>São Luís</td>
-            <td>7.153.262</td>
+            <td class="num">7.153.262</td>
 		</tr>
 		<tr>
 			<td>Mato Grosso</td>
 			<td>MT</td>
-			<td>Cuiabá</td>
-            <td>3.567.234</td>
+            <td class="num">3.567.234</td>
 		</tr>
 		<tr>
 			<td>Mato Grosso do Sul</td>
 			<td>MS</td>
-			<td>Campo Grande</td>
-            <td>2.839.188</td>
+            <td class="num">2.839.188</td>
 		</tr>
 		<tr>
 			<td>Minas Gerais</td>
 			<td>MG</td>
-			<td>Belo Horizonte</td>
-            <td>21.411.923</td>
+            <td class="num">21.411.923</td>
 		</tr>
 		<tr>
 			<td>Pará</td>
 			<td>PA</td>
-			<td>Belém</td>
-            <td>8.777.124</td>
+            <td class="num">8.777.124</td>
 		</tr>
 		<tr>
 			<td>Paraíba</td>
 			<td>PB</td>
-			<td>João Pessoa</td>
-            <td>4.059.905</td>
+            <td class="num">4.059.905</td>
 		</tr>
 		<tr>
 			<td>Paraná</td>
 			<td>PR</td>
-			<td>Curitiba</td>
-            <td>11.597.484</td>
+            <td class="num">11.597.484</td>
 		</tr>
 		<tr>
 			<td>Pernambuco</td>
 			<td>PE</td>
-			<td>Recife</td>
-            <td>9.674.793</td>
+            <td class="num">9.674.793</td>
 		</tr>
 		<tr>
 			<td>Piauí</td>
 			<td>PI</td>
-			<td>Teresina</td>
-            <td>3.289.290</td>
+            <td class="num">3.289.290</td>
 		</tr>
 		<tr>
 			<td>Rio de Janeiro</td>
 			<td>RJ</td>
-			<td>Rio de Janeiro</td>
-            <td>46.649.132</td>
+            <td class="num">46.649.132</td>
 		</tr>
 		<tr>
 			<td>Rio Grande do Norte</td>
 			<td>RN</td>
-			<td>Natal</td>
-            <td>3.560.903</td>
+            <td class="num">3.560.903</td>
 		</tr>
 		<tr>
 			<td>Rio Grande do Sul</td>
 			<td>RS</td>
-			<td>Porto Alegre</td>
-            <td>11.466.630</td>
+            <td class="num">11.466.630</td>
 		</tr>
 		<tr>
 			<td>Rondônia</td>
 			<td>RO</td>
-			<td>Porto Velho</td>
-            <td>1.815.278</td>
+            <td class="num">1.815.278</td>
 		</tr>
 		<tr>
 			<td>Roraima</td>
 			<td>RR</td>
-			<td>Boa Vista</td>
-            <td>652.713</td>
+            <td class="num">652.713</td>
 		</tr>
 		<tr>
 			<td>Santa Catarina</td>
 			<td>SC</td>
-			<td>Florianópolis</td>
-            <td>7.338.473</td>
+            <td class="num">7.338.473</td>
 		</tr>
 		<tr>
 			<td>São Paulo</td>
 			<td>SP</td>
-			<td>São Paulo</td>
-            <td>46.649.132</td>
+            <td class="num">46.649.132</td>
 		</tr>
 		<tr>
 			<td>Sergipe</td>
 			<td>SE</td>
-			<td>Aracaju</td>
-            <td>2.338.474</td>
+            <td class="num">2.338.474</td>
 		</tr>
 		<tr>
 			<td>Tocantins</td>
 			<td>TO</td>
-			<td>Palmas</td>
-            <td>1.607.363</td>
+            <td class="num">1.607.363</td>
 		</tr>
 	</tbody>
     <tfoot>
-        <th scope="row">
-            Total de Habitantes
-        </th>
-        <td>120302</td>
+        <tr>
+            <th scope="row">
+                Total de Habitantes
+            </th>
+            <td></td>
+            <td class="num">120302</td>
+        </tr>
     </tfoot>
 </table>
 </body>
